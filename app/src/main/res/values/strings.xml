@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Assignment2_simple_calculator</string>
+
+    <string-array name="calc_spinner_items">
+        <item>Add</item>
+        <item>Subtract</item>
+        <item>Divide</item>
+        <item>Multiply</item>
+        <item>Modulus</item>
+        <item>Exponent</item>
+    </string-array>
 </resources>

@@ -47,16 +47,25 @@
             android:indeterminate="false"
             android:layout_gravity="center_horizontal" />
 
+        <Spinner
+            android:id="@+id/calcSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:entries="@array/calc_spinner_items"
+            android:layout_gravity="center_horizontal" />
+
         <LinearLayout
             android:id="@+id/linearContainerCalculate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:context=".MainActivity">
+            tools:context=".MainActivity" >
 
             <Button
                 android:id="@+id/calculateButton"
@@ -67,6 +76,12 @@
                 android:padding="8dp"
                 android:radius="8dp"
                 android:text="Calculate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:text="0" />
 
         </LinearLayout>
 
